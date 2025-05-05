@@ -18,7 +18,10 @@ const LandingPage = () => {
         <nav className="navbar">
           <img src="/ustp-things-logo.png" alt="USTP Things" className="logo" />
           <div className="nav-items">
-            <input type="text" placeholder="Search" className="search-input" />
+            <div className="search-box">
+              <img src="/search.png" alt="Search Icon" className="search-icon" />
+              <input type="text" placeholder="Search" className="search-input" />
+            </div>
             <div className="cart-icon-container">
               <img src="/Shopping cart.png" alt="Shopping cart" className="cart-icon" />
             </div>
