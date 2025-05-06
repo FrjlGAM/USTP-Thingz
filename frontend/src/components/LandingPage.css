@@ -19,8 +19,8 @@ html, body {
 }
 
 .sidebar {
-  width: 350px;
-  min-height: 100vh;
+  width: 350px; /* Set width to 350px */
+  height: 793px; /* Set height to 793px */
   background-color: #FFF3F2;
   display: flex;
   justify-content: center;
@@ -36,7 +36,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .btn {
@@ -64,7 +64,8 @@ html, body {
 }
 
 .navbar {
-  height: 85px;
+  height: 70px; /* Adjusted height */
+  width: 1150px; /* Adjusted width */
   background-color: #FFF3F2;
   border-bottom: 5px solid white;
   display: flex;
@@ -73,8 +74,7 @@ html, body {
   padding: 10px 30px;
   position: fixed;
   top: 0;
-  left: 350px;
-  width: calc(100% - 350px);
+  right: 0px;
   z-index: 1000;
 }
 
@@ -142,9 +142,9 @@ html, body {
 .hero {
   position: absolute;
   left: 350px;
-  top: 85px;
+  top: 70px;
   width: calc(100% - 350px);
-  height: calc(100% - 85px);
+  height: calc(100% - 70px);
   display: flex;
   align-items: center;
   justify-content: center;

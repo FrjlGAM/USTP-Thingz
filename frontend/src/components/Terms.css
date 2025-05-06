@@ -1,122 +1,100 @@
 .terms-container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background: white;
-    overflow: hidden;
-    border-radius: 20px;
-    outline: 3px solid #ECB3A8;
-    outline-offset: -3px;
-    font-family: 'Inria Sans', sans-serif;
-  }
-  
-  .terms-logo {
-    position: absolute;
-    top: 52px;
-    left: 221px;
-    width: 95.05px;
-    height: 51px;
-  }
-  
-  .terms-title {
-    position: absolute;
-    top: 103px;
-    left: 83px;
-    width: 397px;
-    height: 53px;
-    text-align: center;
-    color: #F88379;
-    font-size: 40px;
-    font-weight: 700;
-  }
-  
-  .terms-subtitle {
-    position: absolute;
-    top: 167px;
-    left: 47px;
-    width: 457px;
-    height: 71px;
-    text-align: center;
-    color: black;
-    font-size: 20px;
-    font-weight: 300;
-  }
-  
-  .terms-content {
-    position: absolute;
-    top: 261px;
-    left: 19px;
-    width: 512px;
-    height: 975px;
-    overflow-y: auto;
-    color: black;
-  }
-  
-  .terms-content h2 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 20px;
-  }
-  
-  .terms-content p {
-    font-size: 18px;
-    font-weight: 300;
-    margin: 10px 0;
-  }
-  
-  .terms-proceed-btn-bg {
-    position: absolute;
-    top: 1179px;
-    left: 148px;
-    width: 266px;
-    height: 38px;
-    background: #F88379;
-    border-radius: 23.08px;
-  }
-  
-  .terms-proceed-btn-text {
-    position: absolute;
-    top: 1186px;
-    left: 174px;
-    width: 214px;
-    height: 25px;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-  }
-  
-  .terms-close-icon-bg {
-    position: absolute;
-    top: 19px;
-    left: 485px;
-    width: 44px;
-    height: 41px;
-    background: #ECB3A8;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-  }
-  
-  .terms-close-icon-line1,
-  .terms-close-icon-line2 {
-    position: absolute;
-    width: 34.66px;
-    height: 0;
-    outline: 3px solid black;
-    outline-offset: -1.5px;
-  }
-  
-  .terms-close-icon-line1 {
-    top: 29px;
-    left: 494px;
-    transform: rotate(44deg);
-    transform-origin: top left;
-  }
-  
-  .terms-close-icon-line2 {
-    top: 29px;
-    left: 520px;
-    transform: rotate(136deg);
-    transform-origin: top left;
-  }
-  
+  width: 549px;
+  height: 688px;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  border-radius: 20px;
+  outline: 3px solid #ECB3A8;
+  outline-offset: -3px;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+/* Fixed logo and title */
+.terms-logo {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95.05px;
+  height: 51px;
+}
+
+.terms-title {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  color: #F88379;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Scrollable body */
+.terms-body {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 150px);
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Text content inside body */
+.terms-subtext {
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.terms-section {
+  margin-bottom: 20px;
+}
+
+.terms-section strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.terms-section ul {
+  padding-left: 20px;
+}
+
+.terms-section li {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 6px;
+}
+
+/* Proceed button */
+.popup-register-button {
+  display: block;
+  margin: 20px auto 40px;
+  width: 200px;
+  height: 38px;
+  background: #F88379;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 23.08px;
+  cursor: pointer;
+}
+
+/* Close icon */
+.terms-close-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
